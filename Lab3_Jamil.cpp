@@ -7,6 +7,7 @@ using namespace std;
 
      
  void mentesMaestras();
+ void Merge();
 
   	   int main(){
 	       
@@ -26,7 +27,7 @@ using namespace std;
 
                 	   break;
 		   case 3:
-
+                   Merge();
 			   break;
 	
 		 }//Final de switch
@@ -76,13 +77,20 @@ void Merge(){
 	int size = 0;
 	cout<<"Ingrese el numero de numeros a ingresar: "<<endl;
         cin>>size;
+	int array [size];
+        //llenar
+	for(int i = 0; i < size;i++){
 	srand(time(NULL));
-	int random = 10000+rand()%(99999-10000);
-	int array [] = new int[size];
-
-	for(int i = 0; i<array.length();i++){
-	 array[i] = 	
+	int random = 10000+rand()%(99999-10000);	 
+	array[i] = random;	
 	}
+        //imprimir
+	cout<<"Arreglo original: "<<endl;
+	for(int i = 0; i < size;i++){
+	 cout<<"[ "<<array[i]<<" ]";
+	}
+
+	
 
 
 }
