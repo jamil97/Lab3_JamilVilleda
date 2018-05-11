@@ -41,7 +41,6 @@ void mentesMaestras(){
         string subcadenaingresada1;
 	string numero;
 	int contIguales = 0;
-	cout<<"Numero Random: "<<cadenaRand<<endl;
 	while(contadorTurnos>0){
 		cout<<"Tiene "<<contadorTurnos<<" oportunidades par adivinar el numero"<<endl; 
 		cout<<"Ingrese el numero que desea tratar de verificar: "<<endl;
@@ -78,13 +77,18 @@ void Merge(){
 	cout<<"Ingrese el numero de numeros a ingresar: "<<endl;
         cin>>size;
 	int array [size];
-        //llenar
-	for(int i = 0; i < size;i++){
+        
+	//llenar
 	srand(time(NULL));
-	int random = 1000+rand()%(1000-1);	 
+	int random = 1000+rand()%(1000-1);
+
+	for(int i = 0; i < size;i++){
+	 
 	array[i] = random;	
 	}
+
         //imprimir
+	
 	cout<<"Arreglo original: "<<endl;
 	for(int i = 0; i < size;i++){
 	 cout<<"[ "<<array[i]<<" ]";
