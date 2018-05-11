@@ -80,10 +80,10 @@ void Merge(){
         
 	//llenar
 	srand(time(NULL));
-	int random = 1000+rand()%(1000-1);
+
 
 	for(int i = 0; i < size;i++){
-	 
+	int random = 1000+rand()%(1000-1);
 	array[i] = random;	
 	}
 
