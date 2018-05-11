@@ -81,7 +81,7 @@ void Merge(){
         //llenar
 	for(int i = 0; i < size;i++){
 	srand(time(NULL));
-	int random = 10000+rand()%(99999-10000);	 
+	int random = 1000+rand()%(1000-1);	 
 	array[i] = random;	
 	}
         //imprimir
